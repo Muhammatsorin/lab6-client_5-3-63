@@ -3,8 +3,11 @@ import axios from 'axios'
 import BearCard from './components/BearCard'
 import BearList from './components/BearList'
 import InputForm from './components/InputForm';
+import {useSelector} from "react-redux"
 
 export default () => {
+
+  const redux = useSelector(state => state)
 
   const [bears, setBears] = useState({})
   const [formData, setData] = useState({
